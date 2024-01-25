@@ -28,14 +28,29 @@
                     </div>
                 </li>
             </ul>
-            <form class="d-flex my-2 my-lg-0">
-                <input class="form-control me-sm-2" type="text" placeholder="Search" />
-                <a href="search.php">
-                    <button class="btn my-2 my-sm-0" type="button" href="search.php">
-                        Search
-                    </button>
-                </a>
-            </form>
+            <form action="search.php" method="get" class="d-flex my-2 my-lg-0 formulaire-nav">
+    <input class="form-control me-sm-2" type="text" name="search" placeholder="Search" />
+    <button class="btn my-2 my-sm-0 bouton_search" type="submit">
+        Search
+    </button>
+</form>
         </div>
     </div>
 </nav>
+<!--<script>
+    $(document).ready(function () {
+        $(".formulaire-nav").submit(function () {
+            window.removeEventListener("beforeunload", confirmationAvantDeQuitter);
+        });
+    });
+
+    function confirmationAvantDeQuitter(e) {
+        e.preventDefault();
+    }
+
+    window.addEventListener("beforeunload", confirmationAvantDeQuitter);
+</script>-->
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
