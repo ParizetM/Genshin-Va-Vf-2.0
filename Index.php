@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Genshin VA VF</title>
+    <title>Genshin VA VF - Bienvenue</title>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -81,7 +81,7 @@
                     </a>
                 </div>
                 <div class="col col2">
-                    <img class="img-fluid w-50" src="media/tiktok_carousel.png" alt="" />
+                    <img class="img-fluid w-50 tiktok_iphone_preview" src="media/tiktok_carousel.png" alt="" />
                 </div>
             </div>
         </div>

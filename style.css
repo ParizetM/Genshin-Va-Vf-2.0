@@ -5,6 +5,9 @@
     --dark-color-1: #0010a3c4;
     --very-light-color:#ffe8f1;
     --dark-text: #222529;
+    --light-color-2: #FFAFCC;
+    --light-color: #A2D2FF;
+
 }
 @font-face {
     font-family: 'HYWenHei-85W';
@@ -13,10 +16,15 @@
 body {
     font-family: 'HYWenHei-85W', sans-serif;
     background-color: var(--very-light-color);
+    overflow-x: hidden;
+
 }
 h1 {
     text-align: center;
     margin: 80px 0;
+}
+h3 {
+    margin-left: 20px;
 }
 /* #region header */
 .navbar {
@@ -37,12 +45,19 @@ h1 {
 /* #endregion header */
 /* #region Main */
 
+.ligne_sous_titre {
+    width: 80%;
+    margin: 0 auto;
+    margin-top: -100px;
+}
 .image_top {
     width: 100%;
 }
 .body_container {
     display: grid;
     grid-template-columns: 0 auto 0;
+    overflow-x: hidden;
+
 }
 .body_container > *{
     grid-column: 2;
@@ -58,7 +73,6 @@ h1 {
     }
   }
 /* #endregion Main */
-
 /* #region index */
 
 .carousel {
@@ -82,7 +96,7 @@ h1 {
     height: 200px;
     margin-top: auto;
     margin-bottom: auto;
-    width: 100
+    width: 100px;
 }
 
 .carousel-caption {
@@ -95,8 +109,16 @@ h1 {
     top: 0;
     bottom: auto;
 }
-/* #endregion index */
+.tiktok_logo_square {
+    width: 100px;
+    margin-left: 50px;
+}
 
+.tiktok_iphone_preview {
+    margin-left: 80px;
+}
+
+/* #endregion index */
 /* #region search.php */
 
 .formulaire-mid {
@@ -113,6 +135,29 @@ h1 {
     scale: 1.05;
 }
 /* #endregion search.php */
+/* #region contact */
+
+.form_card_contact {
+    background-color: var(--light-color);
+    margin: 0 20%;
+}
+.submit_contact {
+    background-color: var(--very-light-color);
+    border: 1px var(--light-text) solid ;
+    color: var(--dark-text);
+    width: 200px;
+}
+.submit_contact:hover {
+    background-color: transparent;
+    box-shadow: 0 0 5px var(--very-light-color);
+    color: var(--light-text);
+    scale: 1.05;
+}
+.input_contact {
+    background-color: var(--very-light-color);
+}
+
+/* #endregion contact */
 
 
 
@@ -127,13 +172,16 @@ h1 {
 
 
 
-/* #region footer */
+
+
+/* #region footer*/
 
 .footer_reseaux {
     background-color: #111111;
     padding: 20px 0px;
     width: 100vw;
-
+    padding-left: 30%;
+    padding-top: 20px;
 }
 .footer_reseaux a {
     width: fit-content;
@@ -151,6 +199,7 @@ h1 {
 footer {
     background-color: #000;
     overflow: hidden;
+    margin-top: 80px;
 }
 .footer_text  a{
         color: #575757;
