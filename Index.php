@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <title>Genshin VA VF - Bienvenue</title>
@@ -22,6 +22,8 @@
         <img class="image_top" src="media/twins1.png" alt="" />
         <div class="body_container">
                 <h1>Et si Genshin avait une VF ?</h1>
+                <img src="media/ligne.png" alt="" class="ligne_sous_titre" style="width: 80%;" />
+
             <div class="row justify-content-center align-items-center g-2">
                 <div id="carouselindex" class="carousel slide" data-bs-ride="carousel">
                     <ol class="carousel-indicators">

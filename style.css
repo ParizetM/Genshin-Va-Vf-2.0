@@ -5,6 +5,7 @@
     --dark-color-1: #0010a3c4;
     --very-light-color:#ffe8f1;
     --dark-text: #222529;
+    --gray-text: #7a7a7a;
     --light-color-2: #FFAFCC;
     --light-color: #A2D2FF;
 
@@ -21,12 +22,13 @@ body {
 }
 h1 {
     text-align: center;
-    margin: 80px 0;
+    margin: 40px 0;
 }
 h3 {
     margin-left: 20px;
 }
 /* #region header */
+
 .navbar {
     background: linear-gradient(to bottom,black, #0010a3c4);
 }
@@ -48,7 +50,7 @@ h3 {
 .ligne_sous_titre {
     width: 80%;
     margin: 0 auto;
-    margin-top: -100px;
+    margin-top: -60px;
 }
 .image_top {
     width: 100%;
@@ -76,6 +78,7 @@ h3 {
 /* #region index */
 
 .carousel {
+    margin-top: 50px;
     background-color: #ffbfd7;
     margin-bottom: 50px;
     overflow: hidden;
@@ -110,6 +113,7 @@ h3 {
     bottom: auto;
 }
 .tiktok_logo_square {
+    margin-top: 20px;
     width: 100px;
     margin-left: 50px;
 }
@@ -139,7 +143,7 @@ h3 {
 
 .form_card_contact {
     background-color: var(--light-color);
-    margin: 0 20%;
+    margin: 40px 20%;
 }
 .submit_contact {
     background-color: var(--very-light-color);
@@ -148,13 +152,23 @@ h3 {
     width: 200px;
 }
 .submit_contact:hover {
-    background-color: transparent;
+    background-color: var(--dark-text);
     box-shadow: 0 0 5px var(--very-light-color);
     color: var(--light-text);
     scale: 1.05;
 }
 .input_contact {
     background-color: var(--very-light-color);
+}
+.input_contact::placeholder {
+    color: var(--gray-text);
+}
+@media screen and (max-width: 756px) {
+    .radios_contact {
+        display: grid;
+        grid: 1fr 1fr 1fr 1fr / auto;
+        margin-bottom: 0px;
+    }
 }
 
 /* #endregion contact */

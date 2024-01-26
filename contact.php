@@ -1,7 +1,7 @@
 <?php
 require_once "PDO.php"
     ?>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <title>Genshin VA VF - Contact</title>
