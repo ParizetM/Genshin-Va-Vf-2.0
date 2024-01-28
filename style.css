@@ -339,6 +339,75 @@ h3 {
 
 /* #endregion Bande rythmo */
 
+/* #region demande Bande rythmo */
+
+.ac_body_ul ul li:has(h4){
+    margin-left: -1vw;
+    list-style-type: none;
+}
+.ac_body_ul ul li:has(:not(h4)){
+    margin-top: 1vw;
+}
+.ac_body_ul ul{
+    margin-left: 1vw;
+}
+.accordion {
+    --bs-accordion-btn-bg: #c9b5da;
+    --bs-accordion-active-bg: #ccbddb;
+  --bs-accordion-bg: #d9c8e8;
+  --accordion-color: #111111;
+}
+.accordion-button:not(.collapsed) {
+    color: #3f474f;
+}
+.form_card_demande {
+    background-color: #d9c8e8;
+    margin-bottom: 1vw;
+    padding: 0;
+}
+ .form_card_demande .card-header {
+    background-color: #c9b5da;
+    width: 100%;
+ }
+.form_card_demande input::placeholder,.form_card_demande textarea::placeholder {
+    color: #919191;
+}
+.form_card_demande input,.form_card_demande textarea {
+    background-color: var(--very-light-color);
+}
+
+.form_card_demande .card-body {
+    display: grid;
+    grid: auto auto auto auto auto/auto auto;
+    gap: 2vw;
+}
+
+.largeur2grid1 {
+    grid-column: 1/span 2;
+}
+.largeur3grid1 {
+    grid-column: 1/span 3;
+}
+
+.custom-tooltip {
+    --bs-tooltip-bg: #c9b5da;
+    --bs-tooltip-color: #111111;
+  }
+.select_demande {
+    background-color: var(--very-light-color);
+}
+.select_demande:hover {
+    filter: brightness(0.9);
+}
+.tooltip_demande {
+    border: solid var(--very-light-color);
+    border-radius: 100%;
+    width: 28px;
+    padding: 0;
+    margin-left: 20px;
+}
+/* #endregion demande Bande rythmo */
+
 
 
 

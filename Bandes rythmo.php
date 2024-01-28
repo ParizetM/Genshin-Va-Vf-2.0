@@ -19,7 +19,7 @@
       ?>
   </header>
   <main>
-  <img class="image_top" src="media/haut_de_page.png" alt="" />
+    <img class="image_top" src="media/haut_de_page.png" alt="" />
     <div class="container">
       <div class="row justify-content-center align-items-center g-2 contact_title">
         <h1>Bandes rythmo</h1>
@@ -66,7 +66,7 @@
           <div class="col">
             <h3 class="playlist_h3">Comment faire vos propres bandes rythmos</h3>
           </div>
-        <div class="row g-2">
+          <div class="row g-2">
 
             <div class="col">
               <a href="https://www.youtube.com/watch?v=ATSj4XzaNTE&list=PLs5fkEYvG4S_1m0Wgp3-z2MDeFi0zu2Q3&pp=gAQBiAQB"
@@ -90,10 +90,10 @@
             </div>
           </div>
         </div>
-        </div>
-
-
       </div>
+
+
+    </div>
   </main>
   <footer>
     <?php
