@@ -1,5 +1,6 @@
 <div class="footer_container">
   <div class="row g-2 align-items-center footer_reseaux">
+    <div></div>
     <a href="https://www.youtube.com/@genshinvavf" target="_blank"><img src="media/youtube_logo.png"
         alt="youtube" /></a>
     <a href="https://www.instagram.com/genshinvf_2.0" target="_blank"><img src="media/insta_logo.png" alt="insta" /></a>
