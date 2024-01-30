@@ -2,7 +2,7 @@
 require_once "PDO.php"
   ?>
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
   <title>Genshin VA VF Demande bande rythmo</title>
@@ -24,11 +24,11 @@ require_once "PDO.php"
       ?>
   </header>
   <main>
-    <img class="haut_de_page" src="media/haut_de_page.png" alt="" />
+    <img class="image_top" src="media/haut_de_page.png" alt="" />
     <div class="container">
       <div class="row justify-content-center align-items-center g-2 contact_title">
         <h1>Demande bande rythmo</h1>
-        <img style="width: 80vw" src="media/ligne.png" alt="" />
+        <img src="media/ligne.png" alt="" class="ligne_sous_titre" style="width: 80%;" />
       </div>
       <div class="row justify-content-center align-items-center g-2">
         <h3 class="full_paragraph text-center">
@@ -81,18 +81,18 @@ require_once "PDO.php"
                 <h3>formulaire de demande</h3>
               </div>
               <?php
-                if (isset($_REQUEST['erreur']) && $_REQUEST['erreur'] == 1) {
-                  echo '<h3 style="color: red;"> veuillez remplir tous les champs </h3>';
-                }
-                if (isset($_REQUEST['erreur']) && $_REQUEST['erreur'] == 2) {
-                  echo '<h3 style="color: red;"> veuillez renseigner le type de rythmo </h3>';
-                }
-                if (isset($_REQUEST['erreur']) && $_REQUEST['erreur'] == 3) {
-                  echo '<h3 style="color: red;"> Identifiant discord invalide </h3>';
-                }
-                ?>
+              if (isset($_REQUEST['erreur']) && $_REQUEST['erreur'] == 1) {
+                echo '<h3 style="color: red;"> veuillez remplir tous les champs </h3>';
+              }
+              if (isset($_REQUEST['erreur']) && $_REQUEST['erreur'] == 2) {
+                echo '<h3 style="color: red;"> veuillez renseigner le type de rythmo </h3>';
+              }
+              if (isset($_REQUEST['erreur']) && $_REQUEST['erreur'] == 3) {
+                echo '<h3 style="color: red;"> Identifiant discord invalide </h3>';
+              }
+              ?>
               <div class="card-body">
-                
+
                 <div class="mb-3">
                   <label for="" class="form-label discord_tip">identifiant utilisateur Discord*<button type="button"
                       class="btn tooltip_demande" data-bs-toggle="tooltip" data-bs-placement="top"
@@ -148,7 +148,7 @@ require_once "PDO.php"
             $id_discord = $_REQUEST['id_discord'];
             $type_rythmo = $_REQUEST['type_rythmo'];
             $commentaire = $_REQUEST['commentaire'];
-            if (strlen($maVariable) > 16 && strlen($maVariable) < 19) {
+            if (strlen($id_discord) > 16 && strlen($id_discord) < 19) {
               if ($type_rythmo != 0) {
                 $send_demande_rythmo = "INSERT INTO demande_rythmo(id_discord,lien_ytb,type_rythmo,commentaire) 
                     VAlUES ('$id_discord','$lien_ytb','$type_rythmo','$commentaire')";

@@ -1,8 +1,8 @@
 <?php
 $host = '127.0.0.1';
 $db= 'genshin_va_vf';
-$user = 'root';
-$pass = '';
+$user = 'GOD';
+$pass = 'Martin2608*';
 $port = 3306;
 $charset = 'utf8mb4' ;
 
