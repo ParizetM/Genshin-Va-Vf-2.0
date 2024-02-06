@@ -1,0 +1,24 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+form {
+    margin: 20px auto;
+    max-width: 400px;
+}
+
+#progressWrapper {
+    display: none;
+    margin-top: 20px;
+}
+
+#progressBar {
+    height: 20px;
+    background-color: #4CAF50;
+    width: 0;
+}
+
+#progressText {
+    margin-top: 10px;
+}

@@ -406,7 +406,6 @@ h3 {
     margin-left: 20px;
 }
 /* #endregion demande Bande rythmo */
-
 /* #region depot audi */
 
 .salon_audition {
@@ -419,10 +418,55 @@ h3 {
 }
 
 /* #endregion depot audi */
+/* #region actu */
 
+.anniversaire {
+    display: grid;
+    grid-row-gap: 1vw;
+    grid-template-columns: auto auto auto;
+    margin-bottom: 8vw;
+}
+.carte_anniversaire {
+    width: 25vw;
+    border-radius: 20px;
+    border: solid #c9b5da;
+    margin: 1vw;
+    padding: 0px;
+    overflow: hidden;
+}
 
+.carte_anniversaire img{
+    width: 25vw;
 
-
+}
+.carte_anniversaire h5 {
+    margin: 1vw;
+}
+.carte_anniversaire p {
+    margin-left: 1vw;
+}
+.margintop2 {
+    transform: translateY(2vw);
+}
+.carte_anniversaire:hover {
+    cursor: pointer;
+    transform: translateY(-1.2vw);
+    box-shadow: 5px 10px 18px rgba(0, 0, 0, 0.5);
+    transition: 0.25s;
+}
+.bouton_annive {
+    margin: 1vw;
+    width: 25vw;}
+/* #endregion actu */
+/* #region admin_home */
+.grid_admin_home {
+    display: grid;
+    grid: auto / auto auto auto;
+}
+.grid_admin_home a{
+    text-decoration: none;
+}
+/* #endregion admin_home */
 
 
 
